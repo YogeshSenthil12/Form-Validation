@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Signup</h2>
+
+        <form action="#" id="myForm">
+            <div class="formField">
+                <label for="username" class="labelFields">Username:</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter a username">
+                <span id="usernameError" class="error"></span>
+            </div>
+
+            <div class="formField">
+                <label for="email" class="labelFields">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="formField">
+                <label for="country" class="labelFields">Choose a Country:</label><br>
+                <select name="country" id="country">
+                    <option value="0">select a country</option>
+                    <option value="india">India</option>
+                    <option value="england">England</option>
+                    <option value="germany">Germany</option>
+                </select>
+                <span id="countryError" class="error"></span>
+            </div>
+
+            <div class="formField">
+                <label for="password" class="labelFields">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter a strong password">
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="formField">
+                <label for="password1" class="labelFields">Confirm Password:</label>
+                <input type="password" name="password1" id="password1" placeholder="Reenter your password">
+                <span id="password1Error" class="error"></span>
+            </div>
+
+            <div class="formSubmit">
+                <button id="submitButton" onclick="validateForm()">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
